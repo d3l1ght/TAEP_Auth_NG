@@ -5,15 +5,15 @@ feature 'TrueAutomation.IO capybara example' do
     visit 'https://trueautomation.io/'
     # Authorisation with stas.odessa@ua.fm
     # Click on Login button >>>>>>>
-    find(ta(   'trueautomationio:home:loginBtn')).click
+    find(ta('trueautomationio:home:loginBtn')).click
     # Fill in Email and Password fields >>>>>>>
-    fill_in ta(   'trueautomationio:auth:signin:EmailField'), with: 'stas.odessa@@ua.fm'
-    fill_in ta(   'trueautomationio:auth:signin:PasswordField'), with: '7167276@Ss'
+    fill_in ta('trueautomationio:auth:signin:EmailField'), with: 'stas.odessa@@ua.fm'
+    fill_in ta('trueautomationio:auth:signin:PasswordField'), with: '7167276@Ss'
     # Click on red Login button >>>>>>>
-    find(ta(   'trueautomationio:auth:signin:LoginBtn')).click
+    find(ta('trueautomationio:auth:signin:LoginBtn')).click
 
 
-    # page.should have_ta ta(   'Project_word')
+    # page.should have_ta ta('Project_word')
     # Found Project CSS
     #find(:css, "#app > div > div > div > div > ul > li > span")
     # Try to find another ways for searching text like "Projects"
